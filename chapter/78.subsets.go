@@ -22,8 +22,6 @@ func backtrack(res *[][]int, nums []int, roundRes []int, index int) {
 }
 
 func subsetsDP(nums []int) [][]int {
-	// res := make([][]int, 0)
-
 	res := dp39(nums)
 	return res
 }
