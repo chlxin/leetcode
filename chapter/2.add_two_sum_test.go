@@ -1,8 +1,8 @@
 package chapter
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func TestAddTwoSum(t *testing.T) {
@@ -35,4 +35,15 @@ func pprint(l *ListNode) {
 		fmt.Println(*l)
 		l = l.Next
 	}
+}
+
+func TestSS(t *testing.T) {
+	nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	changeA(nums)
+	fmt.Println(nums)
+}
+
+func changeA(a []int) {
+	a[2] = 10
+	a = append(a, 20)
 }

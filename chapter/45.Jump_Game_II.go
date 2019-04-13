@@ -1,5 +1,7 @@
 package chapter
 
+// dp(i) = min(dp[i+1],...,dp[i+nums[i]]) + 1, exclude dp[k] != 0 and if min(dp[i+1],...,dp[i+nums[i]] > 0
+// if min(dp[i+1],...,dp[i+nums[i]]) is 0, then dp[i] = 0
 func jump(nums []int) int {
 	n := len(nums)
 	if n < 2 {
