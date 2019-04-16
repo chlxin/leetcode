@@ -24,5 +24,5 @@ func buildTree_2(inorder []int, postorder []int) *TreeNode {
 		}
 	}
 	return &TreeNode{inorder[index], buildTree(inorder[:index], postorder[:index]),
-	buildTree(inorder[index+1:], postorder[index:len(postorder)-1])}
+		buildTree(inorder[index+1:], postorder[index:len(postorder)-1])}
 }
